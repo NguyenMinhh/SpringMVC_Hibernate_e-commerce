@@ -28,7 +28,7 @@
                         pathImage = "resources/images/product/" + p.getImage();
             %>
             <div class="product">																										
-                <a title="Details" href="#"><img src=<%=pathImage%> alt="paperclip" /></a>
+                <a title="Details" href="productdetail.htm?product_id=<%=p.getId()%>"><img src=<%=pathImage%> alt="paperclip" /></a>
                 <div class="desc">
                     <p class="name"><%=p.getName()%></p>
                     <p>Peaces in Box: <span><%=p.getAmount()%></span></p>

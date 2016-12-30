@@ -27,7 +27,7 @@
             <div id="wrapper-bottom">
                 <div class="shell">
                     <!-- Header -->
-                    <!--jsp:include page="header.jsp" />-->
+                    <jsp:include page="header.jsp" />
                     <!-- END Header -->
                     <!-- Main -->
                     <div id="main">
@@ -46,7 +46,7 @@
                             %>
 
                             <div class="product">																										
-                                <a title="Details" href="#"><img src=<%=pathImage%> alt="paperclip" /></a>
+                                <a title="Details" href="productdetail.htm?product_id=<%=pr.getId()%>"><img src=<%=pathImage%> alt="paperclip" /></a>
                                 <div class="desc">
                                     <p class="name"><%=pr.getName()%></p>
                                     <p>Peaces in Box: <span><%=pr.getAmount()%></span></p>

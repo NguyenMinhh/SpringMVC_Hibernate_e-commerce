@@ -35,7 +35,7 @@ public class ShowProductController {
 
         model.addAttribute("lstFeaturedProduct", listFeaturedProduct());
         model.addAttribute("lstBestSellerProduct", listBestSellerProduct());
-        model.addAttribute("lstCategory", listCategory());
+        //model.addAttribute("lstCategory", listCategory());
 
         System.out.println(listFeaturedProduct().size());
         System.out.println(listBestSellerProduct().size());

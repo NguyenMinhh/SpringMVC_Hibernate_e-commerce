@@ -85,5 +85,20 @@ public class ProductHelper {
 
         return lstProduct;
     }
+    
+    public Product getProductById(int id){
+        this.session = HibernateUtil.getSessionFactory().openSession();
+        Product p = new Product();
+        try {
+            org.hibernate.Transaction tx = session.beginTransaction();
+            p = (Product) session.get(Product.class, id);
+            tx.commit();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+            session.getTransaction().rollback();
+        }
+        session.close();
+        return p;
+    }
 
 }

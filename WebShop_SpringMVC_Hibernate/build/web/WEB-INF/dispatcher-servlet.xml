@@ -46,5 +46,9 @@
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
+    
+    <bean id="cart" scope="session" class="modelHelper.ShoppingCart" />
+       
+   
 
 </beans>

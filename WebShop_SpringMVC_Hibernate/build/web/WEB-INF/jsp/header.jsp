@@ -7,11 +7,12 @@
 <%@page import="pojo.Category"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <div id="header">
     <!-- Logo -->
     <h1 id="logo"><a title="Home" href="#">Văn phòng phẩm KTP</a></h1>
-    <p class="shopping-cart"><a class="cart" href="#" title="Your Shopping Cart">Giỏ hàng</a><span>Số SP:</span>&nbsp;4<span>Giá:</span>&nbsp;$59.99</p>					
+    <p class="shopping-cart"><a class="cart" href="#" title="Your Shopping Cart">Giỏ hàng</a><span>Số SP:</span>${cart.numOfItems}<span>Giá:</span>${cart.sumOfPrice}</p>					
     <!-- Search -->
     <div class="search-expand"></div>
     <div id="search">
