@@ -11,8 +11,8 @@
 <!DOCTYPE html>
 <div id="header">
     <!-- Logo -->
-    <h1 id="logo"><a title="Home" href="#">Văn phòng phẩm KTP</a></h1>
-    <p class="shopping-cart"><a class="cart" href="#" title="Your Shopping Cart">Giỏ hàng</a><span>Số SP:</span>${cart.numOfItems}<span>Giá:</span>${cart.sumOfPrice}</p>					
+    <h1 id="logo"><a title="Home" href="index.htm">Văn phòng phẩm KTP</a></h1>
+    <p class="shopping-cart"><a class="cart" href="cart.htm" title="Your Shopping Cart">Giỏ hàng</a><span>Số SP:</span>${cart.numOfItems}<span>Giá:</span>${cart.sumOfPrice}</p>					
     <!-- Search -->
     <div class="search-expand"></div>
     <div id="search">
@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <div id="navigation">
         <ul>
-            <li><a title="Home" href="#">Trang chủ</a></li>
+            <li><a title="Home" href="index.htm">Trang chủ</a></li>
             <li><a title="Catalog" href="#">Danh mục sản phẩm</a></li>
             <li><a title="About Us" href="#">Giới thiệu</a></li>							
         </ul>						
